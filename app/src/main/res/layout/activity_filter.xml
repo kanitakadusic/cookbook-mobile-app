@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:text="Filter "
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:includeFontPadding="false"
+                    android:text="Results"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Category"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/allRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:checked="true"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="all"
+                            android:textColor="@drawable/radio_selector"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/seafoodRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="seafood"
+                            android:textColor="@drawable/radio_selector"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/meatRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="meat"
+                            android:textColor="@drawable/radio_selector"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/vegetarianRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="vegetarian"
+                            android:textColor="@drawable/radio_selector"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/lightRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="light"
+                            android:textColor="@drawable/radio_selector"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/miscellaneousRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="miscellaneous"
+                            android:textColor="@drawable/radio_selector"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/sweetsRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:text="sweets"
+                            android:textColor="@drawable/radio_selector"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Cuisine"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/chineseCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:text="Chinese"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:theme="@style/customised_checkbox" />
+
+                    <CheckBox
+                        android:id="@+id/frenchCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/chineseCheckBox"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:text="French"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:theme="@style/customised_checkbox" />
+
+                    <CheckBox
+                        android:id="@+id/italianCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frenchCheckBox"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:text="Italian"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:theme="@style/customised_checkbox" />
+
+                    <CheckBox
+                        android:id="@+id/indianCheckBoxg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/italianCheckBox"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:text="Indian"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:theme="@style/customised_checkbox" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/japaneseCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:text="Japanese"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:theme="@style/customised_checkbox" />
+
+                    <CheckBox
+                        android:id="@+id/thaiCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/japaneseCheckBox"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:text="Thai"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:theme="@style/customised_checkbox" />
+
+                    <CheckBox
+                        android:id="@+id/turkishCheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thaiCheckBox"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:text="Turkish"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:theme="@style/customised_checkbox" />
+
+                    <CheckBox
+                        android:id="@+id/otherCheckBoxg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/turkishCheckBox"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                        android:fontFamily="@font/poppins_regular"
+                        android:includeFontPadding="false"
+                        android:text="Other"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:theme="@style/customised_checkbox" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:text="Main ingredient"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/search_selector"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Search"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/black"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp">
+
+                <Button
+                    android:id="@+id/applyButton"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="40dp"
+                    android:background="@drawable/radio_selector"
+                    android:backgroundTint="@color/light_gray"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:includeFontPadding="false"
+                    android:text="apply"
+                    android:textAllCaps="false"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation" />
+</RelativeLayout>

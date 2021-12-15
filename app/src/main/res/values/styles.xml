@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="rounded_image" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeTopRight">12dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="customised_checkbox" parent="">
+        <item name="colorAccent">@color/orange</item>
+        <item name="android:textColorSecondary">@color/orange</item>
+        <item name="android:scaleX">0.9</item>
+        <item name="android:scaleY">0.9</item>
+    </style>
+</resources>

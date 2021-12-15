@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Find and Cook"
+                    android:fontFamily="@font/poppins_light"
+                    android:includeFontPadding="false"
+                    android:textSize="28sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food for You"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:textSize="28sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginHorizontal="20dp"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:textCursorDrawable="@color/black"
+                android:inputType="text"
+                android:hint="Search"
+                android:fontFamily="@font/poppins_light"
+                android:includeFontPadding="false"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:background="@drawable/search_selector"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:text="Daily suggestions"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/meal_container">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/sugImage1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="1dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/meal_image"
+                            app:shapeAppearanceOverlay="@style/rounded_image"
+                            android:elevation="4dp"/>
+
+                        <TextView
+                            android:id="@+id/sugText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:text="Vegan Lasagna"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:ellipsize="end"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/cusText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:drawableStart="@drawable/ic_cuisine"
+                            android:drawablePadding="8dp"
+                            android:text="Italian cuisine"
+                            android:fontFamily="@font/poppins_light"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp"
+                            android:textColor="@color/gray"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/meal_container">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/sugImage2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="1dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/meal_image"
+                            app:shapeAppearanceOverlay="@style/rounded_image"
+                            android:elevation="4dp"/>
+
+                        <TextView
+                            android:id="@+id/sugText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:text="General Tso's Chicken"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:ellipsize="end"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/cusText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:drawableStart="@drawable/ic_cuisine"
+                            android:drawablePadding="8dp"
+                            android:text="Chinese cuisine"
+                            android:fontFamily="@font/poppins_light"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp"
+                            android:textColor="@color/gray"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/meal_container">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/sugImage3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="1dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/meal_image"
+                            app:shapeAppearanceOverlay="@style/rounded_image"
+                            android:elevation="4dp"/>
+
+                        <TextView
+                            android:id="@+id/sugText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:text="Chicken Alfredo Primavera"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:ellipsize="end"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/cusText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:drawableStart="@drawable/ic_cuisine"
+                            android:drawablePadding="8dp"
+                            android:text="Italian cuisine"
+                            android:fontFamily="@font/poppins_light"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp"
+                            android:textColor="@color/gray"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:text="Meal categories"
+                android:fontFamily="@font/poppins_medium"
+                android:includeFontPadding="false"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/starterRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="starter"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@drawable/radio_selector"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:id="@+id/mainRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="main"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@drawable/radio_selector"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"/>
+
+                        <RadioButton
+                            android:id="@+id/dessertRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="dessert"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@drawable/radio_selector"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"/>
+
+                        <RadioButton
+                            android:id="@+id/breakfastRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="breakfast"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@drawable/radio_selector"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"/>
+
+                        <RadioButton
+                            android:id="@+id/pastaRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="pasta"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@drawable/radio_selector"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"/>
+
+                        <RadioButton
+                            android:id="@+id/otherRadio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="other"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:textColor="@drawable/radio_selector"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:elevation="4dp"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginHorizontal="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/meal_container">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/exImage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/meal_image"
+                            app:shapeAppearanceOverlay="@style/rounded_image"
+                            android:elevation="3dp"/>
+
+                        <TextView
+                            android:id="@+id/exText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:text="Vegan Lasagna"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:ellipsize="end"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/meal_container">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/exImage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/meal_image"
+                            app:shapeAppearanceOverlay="@style/rounded_image"
+                            android:elevation="3dp"/>
+
+                        <TextView
+                            android:id="@+id/exText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:text="General Tso's Chicken"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:ellipsize="end"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/meal_container">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/exImage3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/meal_image"
+                            app:shapeAppearanceOverlay="@style/rounded_image"
+                            android:elevation="3dp"/>
+
+                        <TextView
+                            android:id="@+id/exText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:text="Vegan Lasagna"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:ellipsize="end"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/meal_container">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/exImage4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/meal_image"
+                            app:shapeAppearanceOverlay="@style/rounded_image"
+                            android:elevation="3dp"/>
+
+                        <TextView
+                            android:id="@+id/exText4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:text="General Tso's Chicken"
+                            android:fontFamily="@font/poppins_regular"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:ellipsize="end"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground"/>
+</RelativeLayout>
