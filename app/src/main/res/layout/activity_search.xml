@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SearchActivity">
+    tools:context=".SearchActivity"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
 
     <EditText
         android:id="@+id/searchFood"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginHorizontal="16dp"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="10dp"
         android:inputType="text"
@@ -21,13 +22,51 @@
         android:includeFontPadding="false"
         android:textSize="16sp"
         android:textColor="@color/black"
-        android:background="@drawable/search_container"/>
+        android:textCursorDrawable="@drawable/cursor"
+        android:background="@drawable/search_container"
+        android:autofillHints="chocolate"
+        android:elevation="3dp" />
 
-    <ListView
-        android:id="@+id/foodSearch"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/searchFood"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:paddingTop="30dp"
+        android:paddingBottom="80dp" />
+
+    <RelativeLayout
+        android:id="@+id/noResultsFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/noResultsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:includeFontPadding="false"
+            android:text="no results found"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noResultsText"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_regular"
+            android:includeFontPadding="false"
+            android:text="please try another search"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -35,5 +74,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_navigation"
-        android:background="?android:attr/windowBackground"/>
+        android:background="?android:attr/windowBackground" />
 </RelativeLayout>

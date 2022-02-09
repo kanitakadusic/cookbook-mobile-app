@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FilterActivity">
+    tools:context=".FilterActivity"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        android:overScrollMode="never">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,35 +22,35 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
+                android:layout_marginHorizontal="16dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="25dp"
                     android:fontFamily="@font/poppins_medium"
                     android:includeFontPadding="false"
                     android:text="Filter "
                     android:textColor="@color/black"
-                    android:textSize="28sp" />
+                    android:textSize="26sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="25dp"
                     android:fontFamily="@font/poppins_light"
                     android:includeFontPadding="false"
                     android:text="Results"
                     android:textColor="@color/black"
-                    android:textSize="28sp" />
+                    android:textSize="26sp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
                 android:fontFamily="@font/poppins_medium"
                 android:includeFontPadding="false"
                 android:text="Category"
@@ -57,8 +60,9 @@
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="4dp"
-                android:scrollbars="none">
+                android:layout_marginTop="6dp"
+                android:scrollbars="none"
+                android:overScrollMode="never">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -66,16 +70,17 @@
                     android:orientation="horizontal">
 
                     <RadioGroup
+                        android:id="@+id/radioFilter"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginHorizontal="8dp"
                         android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/allRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="8dp"
                             android:background="@drawable/radio_selector"
                             android:button="@android:color/transparent"
                             android:checked="true"
@@ -90,7 +95,7 @@
                             android:id="@+id/seafoodRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="8dp"
                             android:background="@drawable/radio_selector"
                             android:button="@android:color/transparent"
                             android:elevation="4dp"
@@ -104,7 +109,7 @@
                             android:id="@+id/meatRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="8dp"
                             android:background="@drawable/radio_selector"
                             android:button="@android:color/transparent"
                             android:elevation="4dp"
@@ -118,7 +123,7 @@
                             android:id="@+id/vegetarianRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="8dp"
                             android:background="@drawable/radio_selector"
                             android:button="@android:color/transparent"
                             android:elevation="4dp"
@@ -132,7 +137,7 @@
                             android:id="@+id/lightRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="8dp"
                             android:background="@drawable/radio_selector"
                             android:button="@android:color/transparent"
                             android:elevation="4dp"
@@ -146,7 +151,7 @@
                             android:id="@+id/miscellaneousRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="8dp"
                             android:background="@drawable/radio_selector"
                             android:button="@android:color/transparent"
                             android:elevation="4dp"
@@ -160,7 +165,7 @@
                             android:id="@+id/sweetsRadio"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
+                            android:layout_margin="8dp"
                             android:background="@drawable/radio_selector"
                             android:button="@android:color/transparent"
                             android:elevation="4dp"
@@ -176,8 +181,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
                 android:fontFamily="@font/poppins_medium"
                 android:includeFontPadding="false"
                 android:text="Cuisine"
@@ -187,8 +192,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="14dp"
+                android:layout_marginHorizontal="10dp"
                 android:orientation="horizontal">
 
                 <RelativeLayout
@@ -206,6 +211,7 @@
                         android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
                         android:fontFamily="@font/poppins_regular"
                         android:includeFontPadding="false"
+                        android:onClick="onCheckboxClicked"
                         android:text="Chinese"
                         android:textColor="@color/black"
                         android:textSize="16sp"
@@ -224,7 +230,8 @@
                         android:text="French"
                         android:textColor="@color/black"
                         android:textSize="16sp"
-                        android:theme="@style/customised_checkbox" />
+                        android:theme="@style/customised_checkbox"
+                        android:onClick="onCheckboxClicked" />
 
                     <CheckBox
                         android:id="@+id/italianCheckBox"
@@ -236,13 +243,14 @@
                         android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
                         android:fontFamily="@font/poppins_regular"
                         android:includeFontPadding="false"
+                        android:onClick="onCheckboxClicked"
                         android:text="Italian"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:theme="@style/customised_checkbox" />
 
                     <CheckBox
-                        android:id="@+id/indianCheckBoxg"
+                        android:id="@+id/indianCheckBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/italianCheckBox"
@@ -251,6 +259,7 @@
                         android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
                         android:fontFamily="@font/poppins_regular"
                         android:includeFontPadding="false"
+                        android:onClick="onCheckboxClicked"
                         android:text="Indian"
                         android:textColor="@color/black"
                         android:textSize="16sp"
@@ -275,7 +284,8 @@
                         android:text="Japanese"
                         android:textColor="@color/black"
                         android:textSize="16sp"
-                        android:theme="@style/customised_checkbox" />
+                        android:theme="@style/customised_checkbox"
+                        android:onClick="onCheckboxClicked" />
 
                     <CheckBox
                         android:id="@+id/thaiCheckBox"
@@ -290,7 +300,8 @@
                         android:text="Thai"
                         android:textColor="@color/black"
                         android:textSize="16sp"
-                        android:theme="@style/customised_checkbox" />
+                        android:theme="@style/customised_checkbox"
+                        android:onClick="onCheckboxClicked" />
 
                     <CheckBox
                         android:id="@+id/turkishCheckBox"
@@ -305,10 +316,11 @@
                         android:text="Turkish"
                         android:textColor="@color/black"
                         android:textSize="16sp"
-                        android:theme="@style/customised_checkbox" />
+                        android:theme="@style/customised_checkbox"
+                        android:onClick="onCheckboxClicked" />
 
                     <CheckBox
-                        android:id="@+id/otherCheckBoxg"
+                        android:id="@+id/otherCheckBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/turkishCheckBox"
@@ -320,15 +332,16 @@
                         android:text="Other"
                         android:textColor="@color/black"
                         android:textSize="16sp"
-                        android:theme="@style/customised_checkbox" />
+                        android:theme="@style/customised_checkbox"
+                        android:onClick="onCheckboxClicked" />
                 </RelativeLayout>
             </RelativeLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="16dp"
                 android:fontFamily="@font/poppins_medium"
                 android:includeFontPadding="false"
                 android:text="Main ingredient"
@@ -336,41 +349,58 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/searchBar"
+                android:id="@+id/searchIngredient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="14dp"
+                android:layout_marginHorizontal="16dp"
                 android:background="@drawable/search_selector"
                 android:drawableStart="@drawable/ic_search"
                 android:drawablePadding="10dp"
-                android:fontFamily="@font/poppins_light"
-                android:hint="Search"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Search for Ingredient"
                 android:includeFontPadding="false"
                 android:inputType="text"
                 android:textColor="@color/black"
-                android:textCursorDrawable="@color/black"
-                android:textSize="14sp" />
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="14sp"
+                android:autofillHints="tomato"
+                android:elevation="4dp" />
 
             <RelativeLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="60dp">
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/radio_selector"
+                android:paddingVertical="0dp"
+                android:elevation="3dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/orange"
+                    android:indeterminateTintMode="src_atop"
+                    android:visibility="gone"
+                    tools:targetApi="lollipop" />
 
                 <Button
                     android:id="@+id/applyButton"
-                    android:layout_width="180dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:layout_margin="40dp"
-                    android:background="@drawable/radio_selector"
-                    android:backgroundTint="@color/light_gray"
+                    android:layout_toEndOf="@+id/progressBar"
+                    android:background="@android:color/transparent"
                     android:button="@android:color/transparent"
-                    android:elevation="4dp"
-                    android:fontFamily="@font/poppins_regular"
+                    android:fontFamily="@font/poppins_medium"
                     android:includeFontPadding="false"
+                    android:letterSpacing="0.2"
                     android:text="apply"
-                    android:textAllCaps="false"
                     android:textColor="@color/orange"
                     android:textSize="18sp" />
             </RelativeLayout>

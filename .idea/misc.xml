@@ -4,25 +4,33 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/cuisine_name_container.xml" value="0.290625" />
+        <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/cursor.xml" value="0.290625" />
+        <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/head_container.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_arrow.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_back.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_cuisine.xml" value="0.290625" />
+        <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_loading.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_navigation_filter.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_navigation_home.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_navigation_search.xml" value="0.290625" />
+        <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_no_results.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/ic_search.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/meal_container.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/option_selector.xml" value="0.290625" />
+        <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/progress_bar.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/radio_selector.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/search_container.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/search_selector.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/test.xml" value="0.290625" />
+        <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/drawable/toast_drawable.xml" value="0.290625" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/layout/activity_filter.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/layout/activity_find.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/layout/activity_meal.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/layout/activity_results.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/layout/activity_search.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/layout/meal_list.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/layout/random_list.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/menu/bottom_navigation.xml" value="0.2574074074074074" />
         <entry key="..\:/Users/Kanita/AndroidStudioProjects/CookBook/app/src/main/res/menu/search_view.xml" value="0.27447916666666666" />
       </map>
