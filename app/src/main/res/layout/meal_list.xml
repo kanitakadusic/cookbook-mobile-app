@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mealList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginHorizontal="8dp"
+    android:background="@drawable/meal_container">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:adjustViewBounds="true"
+        android:elevation="3dp"
+        android:scaleType="fitCenter"
+        app:shapeAppearanceOverlay="@style/rounded_image" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picture"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:text="Meal Name"
+        android:fontFamily="@font/poppins_regular"
+        android:includeFontPadding="false"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:maxLines="2" />
+</RelativeLayout>
